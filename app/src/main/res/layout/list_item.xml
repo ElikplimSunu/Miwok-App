@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/list"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:drawSelectorOnTop="true"
+	tools:context="com.example.android.miwok.NumbersActivity">
+
+	<ImageView
+		android:id="@+id/image"
+		style="@style/ImageView"/>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/category_numbers">
+
+	<android.support.constraint.ConstraintLayout
+		android:id="@+id/text_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="?android:attr/selectableItemBackground">
+
+		<LinearLayout
+			android:id="@+id/text_linear"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:paddingLeft="16dp"
+			android:paddingBottom="16dp"
+			android:paddingTop="16dp">
+
+	<TextView
+		android:id="@+id/default_translation"
+		style="@style/ListItem"/>
+
+	<TextView
+		android:id="@+id/miwok_translation"
+		style="@style/ListItem2" />
+		</LinearLayout>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="16dp"
+			android:src="@drawable/baseline_play_arrow_white_24"
+			app:layout_constraintBottom_toBottomOf="@+id/text_linear"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	</android.support.constraint.ConstraintLayout>
+	</FrameLayout>
+
+
+
+
+</LinearLayout>
